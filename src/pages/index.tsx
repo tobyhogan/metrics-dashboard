@@ -12,20 +12,23 @@ import '../styles/index.css'
 
 
 
-async function getData() {
+const getData = async () => {
 
   const { data, error } = await supabase
     .from('app_metrics')
     .select()
 
-  console.log(data);
+  console.log(data)
+
+  return [data[0].int_value, data[1].int_value]
 
 
 }
 
-getData()
+let arr = await getData();
 
-
+var userCount = arr[0]
+var habitCount = arr[1]
 
 
 
@@ -38,6 +41,10 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <main className="">
       <h1 className="text-4xl mx-auto w-fit mt-10 py-2 px-4">Metrics Page</h1>
+      <ul className="w-fit mx-auto mt-10 pl-6">
+        <li>Authenticated User Count: {userCount}</li>
+        <li>Active Habit Count: {habitCount}</li>
+      </ul>
     </main>
   )
 }
