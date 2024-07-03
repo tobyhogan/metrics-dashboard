@@ -4,6 +4,12 @@ import supabase from '../../supabaseClient'
 
 
 
+import '../styles/global.css'
+import '../styles/index.css'
+
+
+
+
 
 
 async function getData() {
@@ -20,10 +26,6 @@ async function getData() {
 getData()
 
 
-
-
-import '../styles/global.css'
-import '../styles/index.css'
 
 
 
