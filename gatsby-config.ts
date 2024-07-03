@@ -1,5 +1,9 @@
 import type { GatsbyConfig } from "gatsby"
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   plugins: [
     'gatsby-plugin-postcss',
@@ -9,6 +13,11 @@ module.exports = {
         "icon": "src/assets/icon.png"
       }
     },
+    {
+      resolve: `gatsby-source-custom`,
+      options: {
+        apiKey: process.env.API_KEY,
+    }},
 
     // ...
   ],

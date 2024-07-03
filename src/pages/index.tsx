@@ -1,5 +1,26 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
+import supabase from '../../supabaseClient'
+
+
+
+
+
+async function getData() {
+
+  const { data, error } = await supabase
+    .from('app_metrics')
+    .select()
+
+  console.log(data);
+
+
+}
+
+getData()
+
+
+
 
 import '../styles/global.css'
 import '../styles/index.css'
