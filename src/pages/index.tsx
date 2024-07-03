@@ -8,10 +8,6 @@ import '../styles/global.css'
 import '../styles/index.css'
 
 
-
-
-
-
 const getData = async () => {
 
   const { data, error } = await supabase
@@ -29,7 +25,6 @@ let arr = await getData();
 
 var userCount = arr[0]
 var habitCount = arr[1]
-
 
 
 const mainStyles = {
