@@ -13,11 +13,6 @@ module.exports = {
         "icon": "src/assets/icon.png"
       }
     },
-    {
-      resolve: `gatsby-source-custom`,
-      options: {
-        apiKey: process.env.API_KEY,
-    }},
 
     // ...
   ],
