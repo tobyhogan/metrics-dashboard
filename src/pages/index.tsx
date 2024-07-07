@@ -14,12 +14,26 @@ const getData = async () => {
     .from('app_metrics')
     .select()
 
-  console.log(data)
+  //console.log(data)
 
   return [data[0].int_value, data[1].int_value]
 
 
 }
+
+const getData1 = async () => {
+
+  const { data, error } = await supabase
+    .from('profiles')
+    .select()
+
+  console.log(data)
+
+
+
+}
+
+getData1()
 
 let arr = await getData();
 
