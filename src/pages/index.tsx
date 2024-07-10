@@ -33,25 +33,36 @@ const getData1 = async () => {
 
 }
 
-let arr = await getData();
-let arr1 = await getData1()
+let metrics = await getData();
+let users = await getData1()
 
-var userCount = arr[0]
-var habitCount = arr[1]
-
-
-console.log(arr1)
-
-var emailsArr = []
+var userCount = metrics[0]
+var habitCount = metrics[1]
 
 
-for (let user in arr1) {
+var usersArr = []
+var usersCount
 
-  console.log(user.full_name)
 
-  emailsArr.append("hi")
+console.log(users)
+
+
+
+
+for (let user in users) {
+
+  let email = users[user].email_address
+  let userName = users[user].full_name
+  let id = users[user].id
+
+
+  usersArr.push(<li key={id}>- {email} ({userName})</li>)
+
+
 
 }
+
+usersCount = usersArr.length
 
 
 
@@ -67,11 +78,12 @@ const IndexPage: React.FC<PageProps> = () => {
     <main className="">
       <h1 className="text-4xl mx-auto w-fit mt-10 py-2 px-4">Metrics Page</h1>
       <section className="text-center mt-8">
-        <h3>Authenticated User Count: {userCount}</h3>
-        <h3>Active Habit Count: {habitCount}</h3>
-        <h2 className="font-bold text-lg">Emails signed up:</h2>
-        <ul>
-          {}
+        <h2 className="font-bold text-lg mt-8">Core Metrics:</h2>
+        <h3>Authenticated User Count: <b>{userCount}</b></h3>
+        <h3>Active Habit Count: <b>{habitCount}</b></h3>
+        <h2 className="font-bold text-lg mt-8">Users signed up ({usersCount}):</h2>
+        <ul className="w-fit mx-auto text-start mb-4 pl-10 mt-3">
+          {usersArr}
         </ul>
       </section>
     </main>
