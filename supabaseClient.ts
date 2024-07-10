@@ -16,8 +16,6 @@ catch (e) {
   const supabaseKey = import.meta.env.GATSBY_API_KEY;
 }
 
-}
-
 
 
 const supabase = createClient(supabaseUrl, supabaseKey);
