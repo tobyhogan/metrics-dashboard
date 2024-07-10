@@ -76,11 +76,13 @@ const mainStyles = {
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main className="">
-      <h1 className="text-4xl mx-auto w-fit mt-10 py-2 px-4">Metrics Page</h1>
+      <h1 className="text-4xl underline mx-auto w-fit mt-10 py-2 px-4">Metrics Page</h1>
       <section className="text-center mt-8">
         <h2 className="font-bold text-lg mt-8">Core Metrics:</h2>
-        <h3>Authenticated User Count: <b>{userCount}</b></h3>
-        <h3>Active Habit Count: <b>{habitCount}</b></h3>
+        <ul className="w-fit mx-auto text-start pl-4 mt-3">
+          <li>- Authenticated User Count: <b>{userCount}</b></li>
+          <li>- Active Habit Count: <b>{habitCount}</b></li>
+        </ul>
         <h2 className="font-bold text-lg mt-8">Users signed up ({usersCount}):</h2>
         <ul className="w-fit mx-auto text-start mb-4 pl-10 mt-3">
           {usersArr}
