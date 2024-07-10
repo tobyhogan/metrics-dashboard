@@ -7,8 +7,6 @@ import supabase from '../../supabaseClient'
 import '../styles/global.css'
 import '../styles/index.css'
 
-/*
-
 
 const getData = async () => {
 
@@ -74,14 +72,12 @@ const mainStyles = {
 
 }
 
-*/
-
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main className="">
       <h1 className="text-4xl underline mx-auto w-fit mt-10 py-2 px-4">Metrics Page</h1>
-     {/* <section className="text-center mt-8">
+      <section className="text-center mt-8">
         <h2 className="font-bold text-lg mt-8">Core Metrics:</h2>
         <ul className="w-fit mx-auto text-start pl-4 mt-3">
           <li>- Authenticated User Count: <b>{userCount}</b></li>
@@ -91,7 +87,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <ul className="w-fit mx-auto text-start mb-4 pl-10 mt-3">
           {usersArr}
         </ul>
-      </section> */}
+      </section>
     </main>
   )
 }
