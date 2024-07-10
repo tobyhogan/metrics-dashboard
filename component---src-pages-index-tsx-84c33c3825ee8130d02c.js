@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktobyhogan_space=self.webpackChunktobyhogan_space||[]).push([[245],{5823:function(e,t,a){a.r(t),a.d(t,{Head:function(){return c}});var n=a(758);t.default=()=>n.createElement("main",{className:""},n.createElement("h1",{className:"text-4xl underline mx-auto w-fit mt-10 py-2 px-4"},"Metrics Page"),n.createElement("section",{className:"text-center mt-8"},n.createElement("h2",null,"Content")));const c=()=>n.createElement("title",null,"Home Page")}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-84c33c3825ee8130d02c.js.map
