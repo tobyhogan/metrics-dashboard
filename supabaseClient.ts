@@ -2,9 +2,17 @@ import { createClient } from "@supabase/supabase-js";
 
 
 
-const supabaseUrl = process.env.GATSBY_SUPABASE_URL;
-const supabaseKey = process.env.GATSBY_API_KEY;
+try {
 
+  const supabaseUrl = process.env.GATSBY_SUPABASE_URL;
+  const supabaseKey = process.env.GATSBY_API_KEY;
+}
+
+catch (e) {
+
+  console.log("broken")
+
+}
 
 
 
