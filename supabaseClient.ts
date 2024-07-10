@@ -12,6 +12,10 @@ catch (e) {
 
   console.log("broken")
 
+  const supabaseUrl = import.meta.env.GATSBY_SUPABASE_URL;
+  const supabaseKey = import.meta.env.GATSBY_API_KEY;
+}
+
 }
 
 
