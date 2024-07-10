@@ -1,6 +1,6 @@
 import { createClient } from "@supabase/supabase-js";
 
-
+/*
 
 try {
 
@@ -20,4 +20,7 @@ catch (e) {
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-export default supabase;
+export default supabase
+
+
+*/
