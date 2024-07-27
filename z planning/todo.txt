@@ -1,0 +1,12 @@
+- connect authentication to: tobyhogan1 / supabase / active-general / sign in with password + username
+
+
+
+  - https://supabase.com/docs/reference/javascript/auth-signinanonymously
+
+
+
+
+  
+
+
