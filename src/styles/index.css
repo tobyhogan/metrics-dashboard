@@ -21,6 +21,11 @@ h3 {
   text-align: center;
 }
 
+h5 {
+  margin: 0 auto;
+  width: fit-content;
+}
+
 input {
   border: 2px solid black;
   margin: 5px 0 20px 0;
