@@ -1,0 +1,20 @@
+
+
+
+ideas:
+
+
+- I NEED to protect the page properly before I connect to any real user statistics, so only I can log on
+
+  - potential solutions?
+
+    - gatsby protected routes? 
+
+      - first create authentication for me to sign in with
+
+
+        - https://www.gatsbyjs.com/tutorial/authentication-tutorial/
+
+
+
+
