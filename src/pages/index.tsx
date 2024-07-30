@@ -15,7 +15,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <main className="flex flex-col">
 
-      <h1 className="text-3xl mx-auto w-fit mt-10 py-2 px-4 font-bold">Metrics Portal</h1>
+      <h1 className="text-3xl mx-auto w-fit mt-10 py-2 px-4 font-bold">Metrics Dashboard</h1>
           
       <div className="w-fit mx-auto mt-16 mb-16">
 
